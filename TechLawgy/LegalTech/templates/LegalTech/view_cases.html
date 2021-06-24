@@ -1,0 +1,35 @@
+{% extends 'LegalTech\inner-page.html' %}
+
+{% block form_block %}
+
+<br>
+<table id="cases">
+    <tr>
+      <th>Payer Name</th>
+      <th>Payer Address</th>
+      <th>Payee Name</th>
+      <th>Payee Address</th>
+      <th>Download PDF</th>
+      <th>Status</th>
+    </tr>
+    
+      <td>North/South</td>
+      <td>Simon Crowther</td>
+      <td>UK</td>
+      <td>Simon Crowther</td>
+      <td>UK</td>
+      <td>UdddK</td>
+    </tr>
+    <tr>
+      <td>Paris spécialités</td>
+      <td>Marie Bertrand</td>
+      <td>France</td>
+      <td>Simon Crowther</td>
+      <td>UdddK</td>
+      <td>UdddK</td>
+    </tr>
+    {{ data|safe }}
+    </table>
+  <br>
+<a href='register_case' >Create New</a>
+{% endblock %}
